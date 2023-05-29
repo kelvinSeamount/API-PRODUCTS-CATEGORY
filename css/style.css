@@ -1,0 +1,17 @@
+:root {
+  --lg-container-width: 80%;
+  --md-container-width: 90%;
+  --sm-container-width: 94%;
+
+  /*===============FONT-SIZES=============*/
+  --fs-200: 3rem;
+  --fs-300: 1.5rem;
+  --fs-400: 1rem;
+  --fs-500: 0.7rem;
+}
+
+/*==========================CONTIANEER-VARIBLES====================================*/
+.container {
+  width: var(--lg-container-width);
+  margin: 0 auto;
+}

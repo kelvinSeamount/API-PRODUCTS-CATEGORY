@@ -4,14 +4,85 @@
   --sm-container-width: 94%;
 
   /*===============FONT-SIZES=============*/
-  --fs-200: 3rem;
-  --fs-300: 1.5rem;
+  --fs-100: 3rem;
+  --fs-200: 2rem;
+  --fs-300: 1.6rem;
+  --fs-350: 1.4rem;
   --fs-400: 1rem;
   --fs-500: 0.7rem;
 }
 
+/*==========================GENERAL-RESET====================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+section {
+  padding: 2rem 0;
+}
 /*==========================CONTIANEER-VARIBLES====================================*/
 .container {
   width: var(--lg-container-width);
   margin: 0 auto;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.text h1 {
+  font-size: var(--fs-100);
+  margin-bottom: 0.8rem;
+}
+
+.text h4 {
+  font-size: var(--fs-200);
+  margin-top: 1rem;
+}
+
+.text .form-control {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #a5dddd;
+  width: 50%;
+  font-size: var(--fs-400);
+  margin: 1rem 0;
+}
+/*==========================CARD-STYLING====================================*/
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /*opacity: 0;*/
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: rgb(145, 176, 180);
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 o 4px 3px pink;
+}
+
+.card p {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: var(--fs-350);
+}
+.card span {
+  color: red;
 }

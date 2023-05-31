@@ -71,6 +71,10 @@ section {
   margin-top: 2rem;
 }
 
+.card-text {
+  text-align: center;
+  font-size: var(--fs-300);
+}
 .card {
   background-color: rgb(145, 176, 180);
   border-radius: 1rem;
